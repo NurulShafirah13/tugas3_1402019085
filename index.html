@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--<script src="tugas.js"></script>-->
+	<title>3D CALCULATOR</title>
+	<!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="tugas3.css">
+	
+</head>
+<body>
+	<form action= "javascript:calculateArea()" onchange="javascript:updateForm()">
+  <!--header section -->
+
+    <header>
+    	<a href="#" class="logo">3D Calculator <span class="fas fa-shapes"></span></a>
+
+        <div id="menu" class="fas fa-shapes"></div>
+
+
+      	<nav class="nav-bar">
+       	<ul>
+       			<li><a class="active" href="#home"> HOME </a></li>
+                <li><a href="#calculate"> CALCULATOR </a></li>
+                <li><a href="#unsur"> UNSUR </a></li>
+                
+       	</ul>
+       </nav>
+       <div id="menu" class="fas fa-bars"></div>
+    </header>
+    <!--header section end-->
+
+
+
+<!--home section-->
+<section class="home" id="home">
+	
+<div class="wrapper">
+
+	
+
+		<time id="time" class="time"></time>
+		<h1>
+			<span id="greeting"></span>
+			<span id="name" contenteditable="true"></span>
+		</h1>
+</div>
+</section>
+<!--home section end-->
+
+
+<!--section calculate-->
+<section class="calculate" id = "calculate" >
+	<h1 class="title">CALCULATE HERE </h1>
+		
+	<div class = "calculate-shape">
+		<div class="id_shapes">
+			<label for="id_shapes"> Select the geometry </label>
+			<select id="id_shapes">
+				<option value="Silinder" selected>Silinder / Cylinder</option>
+				<option value="Kerucut">Kerucut / Cone</option>
+				<option value="bola">Bola / Sphere</option>
+			</select>
+		</div>
+			<br><br>
+
+			<div id="input-silinder">
+				<label for="jari-jari">Masukkan jari-jari silinder (dalam meter)</label>
+				<input id ="jari-jari" type="number" class="box" min="0" step="any">
+				<br><br>
+				<label for="tinggi">Masukkan tinggi silinder (dalam meter)</label>
+				<input id="tinggi" type="number" class="box" min="0" step="any">
+			</div>
+
+			<div id="input-kerucut" hidden>
+				<label for="radius-kerucut">Masukkan jari-jari kerucut (dalam meter)</label>
+				<input id ="radius-kerucut" type="number" class="box" min="0" step="any">
+				<br><br>
+				<label for="lukis">Masukkan garis pelukis kerucut (dalam meter)</label>
+				<input id="lukis" type="number" class="box" min="0" step="any">
+				<br><br>
+				<label for="tinggi-kerucut">Masukkan tinggi kerucut (dalam meter)</label>
+				<input id="tinggi-kerucut" type="number" class="box" min="0" step="any">
+			</div>
+
+			<div id="input-ball" hidden>
+				<label for="radius-bola">Masukkan jari-jari bola (dalam meter)</label>
+				<input id ="radius-bola" type="number" class="box" min="0" step="any">
+
+			</div>
+
+
+			<input type="submit" value="Calculate!" class="btn1">
+			<div class="output">
+			<h1>
+			<span id="hasil_output"></span>
+			<span id="hasil_output2"></span>
+		    </h1>
+		    </div>
+			
+		</div>
+	</div>
+
+-->
+</section>
+<!--calculator end section-->
+
+<!--unsur section-->
+    <section class="unsur" id="unsur">
+        <h2 class="judul"> Unsur-unsur dari tabung,kerucut,dan bola</h2>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/unsur-tabung.jpg" alt="">
+                <h2> 1. Unsur-unsur dari tabung</h2>
+            </div>
+
+            <div class="box">
+                <img src="images/unsur-kerucut.jpg" alt="">
+                <h2> 2. Unsur-unsur dari kerucut</h2>
+            </div>
+
+            <div class="box">
+                <img src="images/unsur-bola.jpg" alt="">
+                <h2> 3. Unsur-unsur dari bola</h2>
+            </div>
+        </div>
+    </section>
+
+ <!--unsur section end -->
+
+
+    <!--footer section-->
+    <div class="footer">
+        <div class="footer-bar">
+        <h3> Follow and ask me</h3>
+        <a href="https://www.facebook.com/vierra.ramadani" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com/shaafxr/" class="fab fa-instagram"></a>
+        <a href="https://github.com/NurulShafirah13/"class="fab fa-github"></a>
+        </div>
+
+
+    </div>
+    <!--footer section end-->
+
+    <!--jquery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--link ke javascript-->
+    <script src="tugas.js"></script>
+
+
+</body>
+</html>
